@@ -19,3 +19,30 @@ li, ol{
 img{
     width: 100%;
 }
+
+
+// search 
+
+.form-control:focus {
+    box-shadow: none;
+  }
+  
+.input-group{
+    width: 250px !important;
+}
+input[type=search]{
+    outline: none;
+}
+  .btn-search{
+    border-top-right-radius: 4px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 4px !important;
+    background: #f8f9fa !important;
+  }
+  
+  .form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+  }
