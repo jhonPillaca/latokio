@@ -3,7 +3,7 @@
 header {
     display: flex;
     position: fixed;
-    background: #4b3ff3;
+    background: $primary;
     width: 100%;
     height: 70px;
     align-items: center;
@@ -13,10 +13,11 @@ header {
         justify-content: space-between;
         width: calc(100% - 50px);
         margin: auto;
-
+        
         .logo {
             a {
                 width: 100px;
+
                 img {
                     width: 100px;
                 }
@@ -25,15 +26,16 @@ header {
         .wrapper {
             display: flex;
             align-items: center;
-
             gap: $gap;
             ul {
                 display: none;
                 align-items: center;
                 gap: $gap;
+                margin: 0;
 
                 li{
                     a{
+                        color: $white;
                         display:flex;
                         flex-direction: column;
                         align-items: center;
@@ -44,12 +46,20 @@ header {
             .icons {
                 display: flex;
                 align-items: center;
-                gap: $gap;
-
-                .search{
-                    display: flex;
-                    gap: $gap;
+                gap: 1.5rem;
+                a{
+                   color: $white;
                 }
+
+                .input-group{
+                    width: auto;
+                    flex-wrap: nowrap !important;
+                }
+                .sm{
+                    display: flex;
+
+                }
+                
                 a:last-child {
                     &.open-close {
                         i::before {
@@ -70,6 +80,9 @@ header {
                     display: flex;
                 }
                 .icons{
+                    .sm{
+                        display: none;
+                    }
                     a:last-child{
                         display: none;
                     }

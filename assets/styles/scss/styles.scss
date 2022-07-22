@@ -8,12 +8,12 @@
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none !important;
     color: #b6b6b6;
 }
 
 li, ol{
-    list-style: none;
+    list-style: none !important;
 }
 
 img{
@@ -27,12 +27,6 @@ img{
     box-shadow: none;
   }
   
-.input-group{
-    width: 250px !important;
-}
-input[type=search]{
-    outline: none;
-}
   .btn-search{
     border-top-right-radius: 4px !important;
     border-top-left-radius: 0 !important;
